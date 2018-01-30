@@ -69,8 +69,8 @@ def all_supplies_in_holidays(holiday_hash)
       holiday_split = holiday.to_s.split(' ')
       holiday_split.collect do |word|
         capital_word = word.capitalize!
-        word.join(' ')
-        puts "#{word}: #{supplies.join(', ')}"
+        capital_word.join(' ')
+        puts "#{capital_word}: #{supplies.join(', ')}"
       end
     end
   end
